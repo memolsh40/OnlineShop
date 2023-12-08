@@ -1,0 +1,43 @@
+<div ng-controller="navAddCtrl">
+    <div class="container p-3">
+        <div class="card">
+            <div class="card-header">
+                Add a new Navigation
+                <a ng-click="changeMenu('nav-list')" class="btn btn-sm btn-primary float-end">Return</a>
+
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <br/>
+                        <div class="row">
+                            <div class="col login-box-holder">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="title" ng-model="data.title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="link" class="form-label">Link</label>
+                                    <input type="text" class="form-control" id="link" ng-model="data.link">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="enable" class="form-label">Enable</label>
+                                    <select class="form-control" id="enable" ng-model="data.enable">
+                                        <option value="true">Yes</option>
+                                        <option value="false">No</option>
+                                    </select>
+                                </div>
+
+
+
+                                <button type="submit" class="btn btn-primary" ng-click="addData()">Insert</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
